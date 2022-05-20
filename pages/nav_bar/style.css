@@ -1,0 +1,106 @@
+/* reset css */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #f7f5f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* nav-bar */
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar > li {
+  position: relative;
+}
+
+.nav-bar > li .menu {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 350ms linear;
+  background-color: white;
+}
+
+.nav-bar > li .menu:hover {
+  border-color: black;
+}
+
+/* item-list */
+.item-list {
+  position: absolute;
+  left: 0;
+  top: 2.9em;
+  width: 100%;
+  max-height: 0;
+  background-color: white;
+  overflow: hidden;
+  transition: all 400ms linear;
+  z-index: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item-list.show {
+  max-height: 23em;
+}
+
+.item > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.item > a:hover {
+  background-color: #dfdfde;
+}
+
+/* title */
+.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 2px 2px 4px gray;
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+}
