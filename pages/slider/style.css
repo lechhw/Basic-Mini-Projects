@@ -1,0 +1,107 @@
+/* reset css */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* auto-slider css */
+.auto-slider {
+  padding-top: 30px;
+}
+
+.slider {
+  position: relative;
+  height: 340px;
+  margin-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 36px;
+  font-weight: 700;
+  color: #f7f5f2;
+  opacity: 0;
+  text-shadow: 1px 1px 2px gray;
+  transition: opacity 500ms ease-in-out;
+}
+
+.item.showing {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* button-slider css */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.slide-list {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 500ms ease;
+}
+
+.slide-item {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #f7f5f2;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: #202020;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button:hover {
+  color: #f7f5f2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prev-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
