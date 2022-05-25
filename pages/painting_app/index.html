@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 09. Painting App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas class="canvas"></canvas>
+
+    <div class="controls-wrapper">
+      <input
+        class="range"
+        type="range"
+        min="0.5"
+        max="10"
+        step="0.5"
+        value="3.0"
+      />
+
+      <div class="button-group">
+        <div class="paint-mode">
+          <div class="current-color"></div>
+          <button class="paint-button" type="button">Paint</button>
+        </div>
+        <div class="fill-mode">
+          <div class="current-color"></div>
+          <button class="fill-button" type="button">Fill</button>
+        </div>
+        <button class="save-button" type="button">Save</button>
+      </div>
+
+      <div class="colors">
+        <div class="color" style="background-color: #2c2c2c"></div>
+        <div class="color" style="background-color: #fff"></div>
+        <div class="color" style="background-color: #ff3b30"></div>
+        <div class="color" style="background-color: #ff9500"></div>
+        <div class="color" style="background-color: #ffcc00"></div>
+        <div class="color" style="background-color: #4cd963"></div>
+        <div class="color" style="background-color: #5ac8fa"></div>
+        <div class="color" style="background-color: #0579ff"></div>
+        <div class="color" style="background-color: #5856d6"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
