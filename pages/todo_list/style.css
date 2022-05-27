@@ -81,8 +81,13 @@ input {
 
 /* todo-list */
 .todo-list {
-  max-height: 300px;
+  max-height: 250px;
   overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.todo-list::-webkit-scrollbar {
+  display: none;
 }
 
 .todo-item {
@@ -90,6 +95,7 @@ input {
   display: flex;
   align-items: center;
   width: 200px;
+  height: 36px;
   padding: 8px 50px 8px 10px;
   word-break: break-all;
   border-bottom: 2px solid black;
